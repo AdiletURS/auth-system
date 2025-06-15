@@ -26,5 +26,9 @@ services:
     depends_on:
       - db
 
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:5173"
 volumes:
   pgdata:
